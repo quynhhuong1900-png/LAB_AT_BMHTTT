@@ -1,3 +1,3 @@
 Lab 6:XÁC THỰC ACTIVE DIRECTORY VÀ CHÍNH SÁCH TRUY CẬP TRÊN pfSense
-Võ Phan Quỳnh Hương 1150070017 11_DH_TTMT
+Võ Phan Quỳnh Hương 1150070014 11_DH_TTMT
 Môi trường LAB 6 là hệ thống mạng doanh nghiệp giả lập trên VirtualBox phục vụ bài thực hành Xác thực Active Directory và Chính sách truy cập trên pfSense. Mô hình được điều khiển bởi tường lửa pfSense phân chia làm 4 vùng mạng độc lập: WAN (kết nối Internet), MGMT (192.168.56.0/24 - dùng cho máy thật quản trị WebGUI), LAN (10.6.0.0/24 - chứa máy chủ Active Directory Domain Controller DC01 10.6.0.10 cùng các máy trạm Client-A/B), và DMZ (172.16.6.0/24 - chứa máy chủ DMZ-WEB mô phỏng các nhóm trang web). Môi trường này nhằm thực hành tích hợp LDAP/Captive Portal và thiết lập các luật tường lửa kiểm soát truy cập theo IP, dịch vụ và khung giờ (Schedule)
