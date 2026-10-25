@@ -1,3 +1,5 @@
+LAB 7: XÂY DỰNG CHÍNH SÁCH WEB PROTECTION TRÊN MÔ HÌNH pfSense + WEB PROXY
 Võ Phan Quỳnh Hương
 11 ĐH TTMT
 115070014
+Môi trường bài Lab 7 gồm các thành phần chính:pfSense Firewall (10.6.0.1): Làm Gateway L3/L4, chặn kết nối web trực tiếp (80/443) từ Client để ép lưu lượng đi qua Proxy.   WEB-PROXY (10.6.0.30): Chạy Ubuntu Server 24.04 chứa E2Guardian (cổng 8080 - lọc nội dung L7), Squid (cổng 3128 - proxy chuyển tiếp) và ClamAV (quét virus).   DC01 (10.6.0.10): Máy chủ AD/DNS phân giải các tên miền thử nghiệm .lab7.test về DMZ-WEB.   DMZ-WEB (172.16.6.10): Chạy Nginx chứa các trang web mô phỏng.   Client-A / Client-B (10.6.0.21/22): Máy trạm người dùng, bật Proxy thủ công 10.6.0.30:8080
